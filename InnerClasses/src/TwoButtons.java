@@ -4,21 +4,41 @@ import java.awt.event.*;
 
 /**
  * @author danni
- *
+ * Date: October 2020
  */
+
 public class TwoButtons{
 	
+	
+	/**
+	 * use a frame
+	 */
 	JFrame frame;
-	JLabel label;
+	/**
+	 * use a label
+	 */
+	JLabel label; 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		TwoButtons gui = new TwoButtons ();
 		gui.go();
-		
+		int summe = gui.sum(1,2);
+		System.out.println(summe);
 	}
 	
+	/**
+	 * @param x fist input value
+	 * @param y second input value
+	 * @return addition of the input values
+	 */
+	public int sum(int x, int y) {
+		return x+y;
+	}
+	/**
+	 * this is my method
+	 */
 	public void go() {
 	       frame = new JFrame();
 	       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

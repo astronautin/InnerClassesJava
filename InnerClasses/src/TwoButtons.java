@@ -23,9 +23,10 @@ public class TwoButtons{
 	 */
 	public static void main(String[] args) {
 		TwoButtons gui = new TwoButtons ();
-		gui.go();
+		//gui.go();
 		int summe = gui.sum(1,2);
 		System.out.println(summe);
+		System.out.println("Whooo, it pushd!");
 	}
 	
 	/**
